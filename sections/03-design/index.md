@@ -63,7 +63,7 @@ The main system entities are:
 
 Example of Firestore structure:
 
-![Figure1](Firestore structure.png)
+![Figure1](FirestoreStructure.png)
 
 
 ## Interaction
@@ -85,7 +85,7 @@ The interaction between the front-end and Firebase occurs through asynchronous c
 3.  Once the account is created, the data is saved in Firestore.
 4.  The system returns the operation's success and authenticates the user.
 
-![Figure2](Flowchart of user registration.png)
+![Figure2](FlowchartOfUserRegistration.png)
 
 Figure 2. Flowchart of user registration
 
@@ -95,7 +95,7 @@ Figure 2. Flowchart of user registration
 2.  The client calls submitComment() in comments.js, which uses addDoc() to save the comment in Firestore.
 3.  The database updates the data and synchronizes new comments in real-time for all users.
 
-![Figure3](Publication comment flowchart.png)
+![Figure3](PublicationCommentFlowchart.png)
 
 Figure 3. Publication comment flowchart
 
@@ -107,7 +107,7 @@ Figure 3. Publication comment flowchart
 
 3. Users view the most recent news in real-time.
    
-![Figure4](Sequence diagram.png)
+![Figure4](SequenceDiagram.png)
 
 Figure 4. Sequence diagram
 
@@ -131,7 +131,7 @@ State transitions:
 
 - Administrator logs in → Gains additional permissions.
 
-![Figure5](State diagram.png)
+![Figure5](StateDiagram.png)
 
 Figure 5.State diagram
 
@@ -213,6 +213,6 @@ Domain events represent significant changes within the system, used for communic
 -   **CommentPosted**: Triggered when a comment is submitted on a news article.
 -   **FeedUpdated**: Triggered when an RSS feed is updated.
 
-![Figure6](DDD diagram.png)
+![Figure6](DDDdiagram.png)
 
 Figure 6.DDD diagram
