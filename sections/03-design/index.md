@@ -117,7 +117,7 @@ Figure 4. Sequence diagram
 
 The system can be in the following main states:
 
-- **Unauthenticated User** → Can only view news.
+- **Unauthenticated User** → Can only view the homepage.
 
 - **Authenticated User** → Can comment on and rate news.
 
