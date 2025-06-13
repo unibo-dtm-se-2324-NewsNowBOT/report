@@ -135,6 +135,8 @@ State transitions:
 
 Figure 5.State diagram
 
+
+
 ### Data-related aspects
 
 **Data Schema**
@@ -160,6 +162,8 @@ Firestore manages data persistence in the cloud, with:
 - **Firebase Authentication** for secure user management
 
 - **Cloud Firestore** for scalable and flexible data storage and retrieval
+
+## Data-flow diagram 
 
 ## Domain Driven Design
 
@@ -216,3 +220,41 @@ Domain events represent significant changes within the system, used for communic
 ![Figure6](DDDdiagram.png)
 
 Figure 6.DDD diagram
+
+## User Stories and Definition of Done
+
+#### Authentication
+
+- **US1**: As an unregistered user, I want to sign up with email and password so that I can access the platform.
+- **US2**: As a registered user, I want to log in with my credentials so that I can comment and rate news articles.
+
+#### News Aggregation
+
+- **US3**: As a logged-in user, I want to see an up-to-date list of news so that I stay informed in real time.
+- **US4**: As a user, I want to click on a news item to read the full article at the original source.
+
+#### Comments and Ratings
+
+- **US5**: As a logged-in user, I want to post comments on news articles so that I can share my opinions.
+- **US6**: As a logged-in user, I want to rate news articles so that I can express my qualitative judgment.
+
+#### Admin Moderation
+
+- **US7**: As an admin, I want to delete inappropriate comments so that I can maintain a safe environment.
+- **US8**: As an admin, I want to edit user profiles so that I can block or correct abusive accounts.
+- **US9**: As an admin, I want to add or remove RSS feeds so that I can dynamically manage news sources.
+
+
+### Definition of Done
+
+| Requirement                      | Definition of Done                                                                 |
+|----------------------------------|-------------------------------------------------------------------------------------|
+| Registration / Login             | User can register, receive email confirmation, and log in with verified credentials.|
+| News Browsing                    | News feed updates dynamically; each article links to the original external source. |
+| Commenting and Rating            | Users can post comments, view their own and others' feedback, and rate articles.    |
+| Comment Moderation (Admin)       | Admin can view and delete specific comments from the admin panel.                   |
+| RSS Feed Management (Admin)      | Admin can add a new feed via URL and remove feeds from the admin dashboard.         |
+| User Profile Management (Admin)  | Admin can edit user roles or account status via the admin panel.                   |
+
+
+
