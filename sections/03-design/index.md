@@ -165,6 +165,11 @@ Firestore manages data persistence in the cloud, with:
 
 ## Data-flow diagram 
 
+![Figure6](DataFlowDiagram.png)
+
+Figure 6. Data-flow diagram
+
+
 ## Domain Driven Design
 
 In the Project we have defined two main Bounded Contect:
